@@ -26,7 +26,6 @@ library
                      , Print
   build-depends:       base >= 4.7 && < 5
                      , bytestring
-                     , bytestring-show
                      , cassava
                      , colour
                      , containers

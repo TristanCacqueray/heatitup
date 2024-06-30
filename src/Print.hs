@@ -17,7 +17,6 @@ import Data.Maybe
 -- Cabal
 import qualified Data.ByteString.Char8 as C
 import qualified Data.ByteString.Lazy.Char8 as CL
-import qualified Text.Show.ByteString as CS
 import Data.Fasta.ByteString
 
 -- Local
@@ -69,4 +68,4 @@ possToString p = C.intercalate "/" . fmap (posToString p)
 -- | Convert a position to a string. Add the starting point of the read
 -- (converts to 1 indexed).
 posToString :: Position -> Position -> C.ByteString
-posToString p = CL.toStrict . CS.show . unPosition . (+ p)
+posToString p = CL.toStrict . undefined . unPosition . (+ p)
